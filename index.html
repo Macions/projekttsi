@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="#glowne">Główna</a></li>
                 <li><a href="#o_egzaminie">O egzaminie</a></li>
-                <li><a href="#zakres">Zakres materiału</a></li>
+                <li><a href="#zakres_materialu">Zakres materiału</a></li>
                 <li><a href="#etapy_egzaminu">Etapy egzaminu</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
@@ -58,7 +58,6 @@
 
             </div>
         </section>
-        <hr>
 
         <section id="zakres_materialu">
             <h2>Zakres materiału</h2>
@@ -67,43 +66,43 @@
                 <div class="element">
                     <img src="/icons/html.png" alt="Grafika z tekstem HTML">
                     <h3>HTML</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="html">Dowiedz się więcej</button>
                 </div>
 
                 <div class="element">
                     <img src="/icons/css.png" alt="Grafika z tekstem CSS">
                     <h3>CSS</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="css">Dowiedz się więcej</button>
                 </div>
 
                 <div class="element">
                     <img src="/icons/js.png" alt="Grafika z tekstem JS">
                     <h3>JavaScript</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="js">Dowiedz się więcej</button>
                 </div>
 
                 <div class="element">
                     <img src="/icons/php.png" alt="Grafika z tekstem PHP">
                     <h3>PHP</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="php">Dowiedz się więcej</button>
                 </div>
 
                 <div class="element">
                     <img src="/icons/sql.png" alt="Grafika z tekstem SQL">
                     <h3>SQL</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="sql">Dowiedz się więcej</button>
                 </div>
 
                 <div class="element">
                     <img src="/icons/media.png" alt="Grafika z tekstem Multimedia">
                     <h3>Multimedia</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="multimedia">Dowiedz się więcej</button>
                 </div>
 
                 <div class="element">
                     <img src="/icons/bhp.png" alt="Grafika z tekstem BHP">
                     <h3>BHP</h3>
-                    <button>Dowiedz się więcej</button>
+                    <button class="languageButton" data-lang="bhp">Dowiedz się więcej</button>
             </article>
 
 
@@ -118,7 +117,7 @@
                     <p>Test pisemny obejmuje pytania jednokrotnego wyboru dotyczące teorii
                         związanej z tworzeniem i administrowaniem stronami internetowymi, aplikacjami webowymi oraz
                         bazami danych, a także BHP i multimediami.</p>
-                    <p>Część teoretyczna trwa 60 minut i składa się z 40 pytań.</p>
+                    <p><b>Część teoretyczna trwa 60 minut i składa się z 40 pytań.</b></p>
                 </div>
 
                 <div class="etap">
@@ -133,8 +132,9 @@
                         <li>administrowanie środowiskiem serwerowym,</li>
                         <li>Wykonanie grafiki.</li>
                     </ul>
-                    <p>Całość zadania realizowana jest w czasie 150 minut i oceniana na podstawie jakości wykonania oraz
-                        zgodności kodu z poleceniem.</p>
+                    <p><b>Całość zadania realizowana jest w czasie 150 minut i oceniana na podstawie jakości wykonania
+                            oraz
+                            zgodności kodu z poleceniem.</b></p>
                 </div>
 
             </article>
@@ -145,58 +145,203 @@
             <h2>FAQ</h2>
 
             <article id="pytania">
-                <div class="pytanie">Co mogę mieć ze sobą na egzaminie INF.03?</div>
-                <div class="odpowiedz">Na egzaminie INF.03 można mieć przy sobie długopis z czarnym tuszem oraz trzeba
-                    mieć dokument
-                    potwierdzający tożsamość.</div>
+                <div class="pytanie_odpowiedz">
 
-                <div class="pytanie">Z jakich środowisk programistycznych mogę korzystać podczas egzaminu?</div>
-                <div class="odpowiedz">Dozwolone są środowiska wskazane przez komisję egzaminacyjną, takie jak Visual
-                    Studio Code,
-                    XAMPP, phpMyAdmin, Notepad++ czy Sublime Text. Wszystkie środowiska muszą być zainstalowane lokalnie
-                    na
-                    komputerze egzaminacyjnym i nie mogą mieć dostępu do internetu.</div>
-
-                <div class="pytanie">Czy mogę korzystać z internetu lub materiałów pomocniczych?</div>
-                <div class="odpowiedz">Nie – podczas egzaminu INF.03 korzystanie z internetu oraz materiałów
-                    pomocniczych, takich jak książki,
-                    notatki czy dokumentacja online, jest zabronione. Egzamin odbywa się w trybie offline.</div>
-
-                <div class="pytanie">Jak wygląda punktacja i ile trzeba zdobyć, żeby zdać?</div>
-                <div class="odpowiedz">Część teoretyczna trwa 60 minut i składa się z 40 pytań jednokrotnego wyboru. Aby
-                    zdać, należy uzyskać
-                    minimum 50% punktów.<br>
-                    Część praktyczna trwa 150 minut i polega na wykonaniu projektu strony internetowej,
-                    aplikacji webowej oraz zarządzaniu bazą danych. Aby zdać należy zdobyć co najmniej 75% punktów.
+                    <div class="pytanie">Co mogę mieć ze sobą na egzaminie INF.03?</div>
+                    <div class="odpowiedz">Na egzaminie INF.03 można mieć przy sobie długopis z czarnym tuszem oraz
+                        trzeba
+                        mieć dokument
+                        potwierdzający tożsamość.</div>
                 </div>
 
-                <div class="pytanie">Czy można korzystać z własnych plików lub szablonów?</div>
-                <div class="odpowiedz">Nie, podczas egzaminu wszystkie pliki muszą być tworzone od podstaw. Gotowe
-                    szablony, kody źródłowe lub
-                    pliki zapisane wcześniej nie są dozwolone.</div>
 
-                <div class="pytanie">Jak przygotować się do części praktycznej w domu?</div>
-                <div class="odpowiedz">Warto ćwiczyć tworzenie stron internetowych z użyciem HTML, CSS, JavaScript, PHP
-                    oraz SQL, budowanie i
-                    zarządzanie bazami danych, instalowanie i konfigurację środowisk serwerowych lokalnie, testowanie
-                    responsywności i dostępności stron oraz dokumentowanie kodu i tworzenie instrukcji użytkownika.
-                    Regularne ćwiczenia w warunkach zbliżonych do egzaminacyjnych pomagają w opanowaniu wymaganych
-                    umiejętności.</div>
+                <div class="pytanie_odpowiedz">
+                    <div class="pytanie">Z jakich środowisk programistycznych mogę korzystać podczas egzaminu?</div>
+                    <div class="odpowiedz">Dozwolone są środowiska wskazane przez komisję egzaminacyjną, takie jak
+                        Visual
+                        Studio Code,
+                        XAMPP, phpMyAdmin, Notepad++ czy Sublime Text. Wszystkie środowiska muszą być zainstalowane
+                        lokalnie
+                        na
+                        komputerze egzaminacyjnym i nie mogą mieć dostępu do internetu.</div>
+                </div>
 
-                <div class="pytanie">Czy zadania są indywidualne czy zespołowe?</div>
-                <div class="odpowiedz">Zadania są indywidualne. Każdy zdający musi samodzielnie wykonać powierzone mu
-                    zadania praktyczne oraz
-                    odpowiedzieć na pytania teoretyczne. Współpraca z innymi osobami podczas egzaminu jest zabroniona.
+                <div class="pytanie_odpowiedz">
+                    <div class="pytanie">Czy mogę korzystać z internetu lub materiałów pomocniczych?</div>
+                    <div class="odpowiedz">Nie – podczas egzaminu INF.03 korzystanie z internetu oraz materiałów
+                        pomocniczych, takich jak książki,
+                        notatki czy dokumentacja online, jest zabronione. Egzamin odbywa się w trybie offline.
+                    </div>
+                </div>
+                <div class="pytanie_odpowiedz">
+                    <div class="pytanie">Jak wygląda punktacja i ile trzeba zdobyć, żeby zdać?</div>
+                    <div class="odpowiedz">Część teoretyczna trwa 60 minut i składa się z 40 pytań
+                        jednokrotnego wyboru.
+                        Aby
+                        zdać, należy uzyskać
+                        minimum 50% punktów.<br><br>
+                        Część praktyczna trwa 150 minut i polega na wykonaniu projektu strony internetowej,
+                        aplikacji webowej oraz zarządzaniu bazą danych. Aby zdać należy zdobyć co najmniej
+                        75% punktów.
+                    </div>
+                </div>
+                <div class="pytanie_odpowiedz">
+                    <div class="pytanie">Czy można korzystać z własnych plików lub szablonów?</div>
+                    <div class="odpowiedz">Nie, podczas egzaminu wszystkie pliki muszą być tworzone od
+                        podstaw. Gotowe
+                        szablony, kody źródłowe lub
+                        pliki zapisane wcześniej nie są dozwolone.</div>
+                </div>
+                <div class="pytanie_odpowiedz">
+                    <div class="pytanie">Jak przygotować się do części praktycznej w domu?</div>
+                    <div class="odpowiedz">Warto ćwiczyć tworzenie stron internetowych z użyciem
+                        HTML, CSS, JavaScript,
+                        PHP
+                        oraz SQL, budowanie i
+                        zarządzanie bazami danych, instalowanie i konfigurację środowisk serwerowych
+                        lokalnie,
+                        testowanie
+                        responsywności i dostępności stron oraz dokumentowanie kodu i tworzenie
+                        instrukcji użytkownika.
+                        Regularne ćwiczenia w warunkach zbliżonych do egzaminacyjnych pomagają w
+                        opanowaniu wymaganych
+                        umiejętności.</div>
+                </div>
+                <div class="pytanie_odpowiedz">
+
+                    <div class="pytanie">Czy zadania są indywidualne czy zespołowe?</div>
+                    <div class="odpowiedz">Zadania są indywidualne. Każdy zdający musi
+                        samodzielnie wykonać powierzone
+                        mu
+                        zadania praktyczne oraz
+                        odpowiedzieć na pytania teoretyczne. Współpraca z innymi osobami podczas
+                        egzaminu jest
+                        zabroniona.
+                    </div>
                 </div>
             </article>
         </section>
 
     </main>
 
+    <section class="languageDetails" id="html">
+        <div class="content">
+
+            <h2>HTML</h2>
+            <p>HTML (HyperText Markup Language) to podstawowy język służący do tworzenia i strukturyzowania stron
+                internetowych.
+                Na egzaminie INF.03 znajomość HTML jest kluczowa – umożliwia tworzenie nagłówków, akapitów, list,
+                linków,
+                obrazów
+                i innych elementów multimedialnych. Prawidłowe użycie HTML pozwala przygotować stronę, która może być
+                dalej
+                stylizowana
+                za pomocą CSS i uzupełniana dynamicznymi funkcjami przy użyciu JavaScript oraz PHP. Opanowanie HTML jest
+                fundamentem do
+                realizacji zadań praktycznych egzaminu, w tym projektowania struktury strony i integracji z bazami
+                danych.
+            </p>
+        </div>
+    </section>
+
+    <section class="languageDetails" id="css">
+
+        <div class="content">
+            <h2>CSS</h2>
+            <p>CSS (Cascading Style Sheets) to język służący do stylizowania stron internetowych. Na egzaminie INF.03
+                znajomość CSS
+                pozwala nadać stronie estetyczny wygląd, ustawić kolory, czcionki, marginesy, odstępy i pozycjonowanie
+                elementów.
+                Umiejętność tworzenia layoutów, responsywnych układów dla różnych urządzeń oraz efektów wizualnych jest
+                ważna przy
+                realizacji zadań praktycznych. CSS współpracuje z HTML, umożliwiając tworzenie atrakcyjnych i
+                przejrzystych
+                interfejsów
+                użytkownika oraz przygotowanie strony do integracji z JavaScript i PHP.</p>
+        </div>
+    </section>
+
+
+    <section class="languageDetails" id="js">
+
+        <div class="content">
+            <h2>JavaScript</h2>
+            <p>JavaScript to język programowania, który pozwala tworzyć dynamiczne i interaktywne elementy stron
+                internetowych.
+                Na egzaminie INF.03 znajomość JavaScript umożliwia dodawanie funkcji takich jak walidacja formularzy,
+                animacje, interakcje z użytkownikiem i dynamiczne zmiany treści strony. JavaScript współpracuje z HTML i
+                CSS,
+                a także może integrować się z PHP i bazami danych, co jest istotne przy wykonywaniu zadań praktycznych
+                egzaminu,
+                takich jak tworzenie w pełni funkcjonalnej aplikacji webowej.</p>
+        </div>
+    </section>
+
+    <section class="languageDetails" id="php">
+
+        <div class="content">
+            <h2>PHP</h2>
+            <p>PHP to język skryptowy używany do tworzenia dynamicznych aplikacji internetowych po stronie serwera.
+                Na egzaminie INF.03 PHP umożliwia obsługę formularzy, przetwarzanie danych przesyłanych przez
+                użytkownika,
+                komunikację z bazami danych oraz generowanie treści HTML w zależności od potrzeb aplikacji. Umiejętność
+                stosowania
+                PHP w praktyce pozwala integrować front-end z back-endem, realizując funkcjonalne zadania egzaminacyjne,
+                takie jak tworzenie prostych systemów zarządzania treścią czy interaktywnych stron internetowych.</p>
+        </div>
+    </section>
+
+    <section class="languageDetails" id="sql">
+
+        <div class="content">
+            <h2>SQL</h2>
+            <p>SQL (Structured Query Language) to język używany do zarządzania relacyjnymi bazami danych.
+                Na egzaminie INF.03 znajomość SQL pozwala tworzyć i modyfikować tabele, wstawiać, aktualizować i usuwać
+                dane,
+                a także wykonywać zapytania umożliwiające wyszukiwanie i sortowanie informacji. Umiejętność stosowania
+                SQL
+                jest niezbędna przy integracji baz danych z aplikacjami webowymi, obsłudze formularzy oraz realizacji
+                zadań
+                praktycznych,
+                takich jak budowanie prostych systemów zarządzania danymi.</p>
+        </div>
+    </section>
+
+
+    <section class="languageDetails" id="multimedia">
+
+        <div class="content">
+            <h2>Multimedia</h2>
+            <p>Multimedia w kontekście egzaminu INF.03 obejmują wykorzystywanie obrazów, grafiki, wideo, dźwięku oraz
+                innych
+                elementów
+                wizualnych i interaktywnych na stronach internetowych. Niektóre zadania praktyczne wymagają także
+                tworzenia
+                własnej grafiki.
+                Umiejętność prawidłowego wstawiania i formatowania grafik, dodawania wideo i audio oraz optymalizacji
+                plików
+                multimedialnych
+                jest istotna przy tworzeniu estetycznych i funkcjonalnych stron. Dobrze przygotowana sekcja multimediów
+                wpływa na atrakcyjność
+                interfejsu użytkownika.</p>
+        </div>
+    </section>
+
+    <section class="languageDetails" id="bhp">
+
+        <div class="content">
+            <h2>BHP</h2>
+            <p>Podczas egzaminu INF.03 znajomość zasad BHP jest niezbędna, aby pracować bezpiecznie.
+                Przestrzeganie BHP jest oceniane w części praktycznej, a pytania z tego tematu często są na egzaminie w
+                części teoretycznej.</p>
+        </div>
+    </section>
+
+
     <footer>
-        <p>Strona wykonana przez: <br>
-            Macieja Czarneckiego - 4TIB <br>
-            2025-09.25</p>
+        <footer>
+            <p>&copy; Maciej Czarnecki<br>Chąśno 26.09.2025 r.</p>
+        </footer>
     </footer>
 
 </html>
