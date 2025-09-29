@@ -27,27 +27,21 @@ buttons.forEach(button => {
 
 		languageDetails.forEach(detail => {
 			if (detail.id === control) {
-				// pokaż nową sekcję
 				detail.style.opacity = "1";
 				detail.style.transform = "translateX(0)";
 
-				// automatyczny zjazd po 20s
 				let timeoutId = setTimeout(() => {
 					detail.style.transform = "translateX(200%)";
 					detail.style.opacity = "0";
 				}, 20000);
 
-				// zatrzymaj / wznow przy hover
 				detail.addEventListener("mouseenter", () => {
-					console.log("hover");
 					clearTimeout(timeoutId);
 					detail.classList.add("resume");
 				});
 
 				detail.addEventListener("mouseleave", () => {
-					// wznów animację paska
 					detail.classList.remove("resume");
-					// wznow zjazd, jeśli chcesz, np. po pozostałym czasie
 					timeoutId = setTimeout(() => {
 						detail.style.transform = "translateX(200%)";
 						detail.style.opacity = "0";
@@ -55,7 +49,6 @@ buttons.forEach(button => {
 				});
 
 			} else if (detail.style.opacity === "1") {
-				// jeśli inna sekcja jest widoczna, wyjeżdża płynnie
 				detail.style.transform = "translateX(200%)";
 				setTimeout(() => {
 					detail.style.opacity = "0";

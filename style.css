@@ -24,7 +24,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* NAVIGATION */
 main nav {
 	width: 100vw;
 	padding: 20px 10px;
@@ -67,7 +66,6 @@ main nav ul li:hover::before {
 	width: 120%;
 }
 
-/* HEADER */
 main header {
 	height: var(--header-height);
 	width: 100vw;
@@ -136,7 +134,6 @@ header a:hover {
 	color: var(--primary-bg);
 }
 
-/* O EGZAMINIE */
 section#o_egzaminie {
 	padding: 20px 10px;
 	display: flex;
@@ -144,7 +141,6 @@ section#o_egzaminie {
 	align-items: center;
 	margin-top: 80px;
 	margin-bottom: 80px;
-
 }
 
 section#o_egzaminie h2 {
@@ -170,7 +166,6 @@ section#o_egzaminie .content ul {
 }
 
 section#o_egzaminie .content img {
-	/* width: 40%; */
 	max-width: 500px;
 }
 
@@ -178,10 +173,8 @@ section#o_egzaminie .content p:first-of-type:first-letter {
 	font-size: xx-large;
 }
 
-/* ZAKRES MATERIALU */
 section#zakres_materialu {
 	margin-top: 40px;
-	/* min-height: 100vh; */
 }
 
 section#zakres_materialu h2 {
@@ -249,12 +242,9 @@ section#zakres_materialu article.zakres .element button:hover {
 	border-color: var(--accent-light);
 }
 
-/* ETAPY EGZAMINU */
 section#etapy_egzaminu {
-	/* min-height: 100vh; */
 	margin-top: 80px;
 	margin-bottom: 80px;
-	
 	padding: 20px 10px;
 	display: flex;
 	flex-direction: column;
@@ -335,10 +325,7 @@ section#etapy_egzaminu .etapy .etap ul li {
 	text-align: left;
 }
 
-/* FAQ */
 section#faq {
-	/* min-height: 100vh; */
-	/* padding: 20px 10px; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -379,7 +366,6 @@ section#faq #pytania .pytanie_odpowiedz .odpowiedz {
 	overflow: hidden;
 }
 
-/* FOOTER */
 footer {
 	width: 100vw;
 	padding: 10px 0px;
@@ -390,7 +376,6 @@ footer {
 	position: relative;
 }
 
-/* LANGUAGE DETAILS */
 section.languageDetails {
 	width: 420px;
 	max-width: 90vw;
@@ -485,90 +470,74 @@ section.languageDetails .content a.linkLangugageDetails:hover {
 	from {
 		width: 100%;
 	}
-
 	to {
 		width: 0;
 	}
 }
 
-/* DUŻE EKRANY */
 @media (max-width: 1200px) {
 	section#zakres_materialu article.zakres {
 		grid-template-columns: repeat(2, minmax(200px, 1fr));
 		gap: 2rem;
 	}
-
 	section#etapy_egzaminu .etapy {
 		flex-direction: column;
 		gap: 30px;
 		align-items: center;
 	}
-
 	section#etapy_egzaminu .etapy .etap {
 		width: 80%;
 		min-height: 450px;
 	}
 }
 
-/* ŚREDNIE EKRANY TABLETY / LAPTOPY */
 @media (max-width: 992px) {
 	header h1 {
 		font-size: 4rem;
 	}
-
 	header p {
 		font-size: 1.5rem;
 	}
-
 	section#o_egzaminie h2,
 	section#zakres_materialu h2,
 	section#etapy_egzaminu h2,
 	section#faq h2 {
 		font-size: 2.5rem;
 	}
-
 	section#o_egzaminie .content {
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
 	}
-
 	section#o_egzaminie .content img {
 		width: 60%;
 		margin-bottom: 20px;
 	}
-
 	section#zakres_materialu article.zakres {
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
 	}
-
 	section#etapy_egzaminu .etapy .etap {
 		width: 90%;
 		min-height: 400px;
 	}
 }
 
-/* MAŁE EKRANY TELEFONY */
 @media (max-width: 768px) {
 	main nav ul {
 		flex-direction: column;
 		gap: 10px;
 	}
-
 	header h1 {
 		font-size: 2.5rem;
 	}
-
 	header p {
 		font-size: 1.4rem;
 		max-width: 90%;
 	}
-
 	section#o_egzaminie .content img {
 		width: 90%;
 	}
-
 	section#zakres_materialu article.zakres {
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
@@ -578,23 +547,19 @@ section.languageDetails .content a.linkLangugageDetails:hover {
 		width: 100px;
 		height: 100px;
 	}
-
 	section#zakres_materialu article.zakres .element button {
 		font-size: 16px;
 		padding: 8px 16px;
 	}
-
 	section#faq #pytania {
 		width: 100%;
 		max-width: 98vw;
 	}
-
 	section#faq {
 		width: 90%;
 	}
 }
 
-/* BARDZO MAŁE EKRANY MOBILE */
 @media (max-width: 500px) {
 	section.languageDetails {
 		width: 95vw;
@@ -603,26 +568,20 @@ section.languageDetails .content a.linkLangugageDetails:hover {
 		padding: 10px;
 		font-size: 14px;
 	}
-
 	header h1 {
 		font-size: 2rem;
 	}
-
 	header p {
 		font-size: 1.2rem;
 		font-weight: 300;
 	}
-
 	section#zakres_materialu article.zakres {
 		width: 70% !important;
 	}
-	
-
 	section#etapy_egzaminu .etapy .etap {
 		width: 95%;
 		min-height: 350px;
 	}
-
 	main nav ul li a {
 		font-size: 18px;
 		padding: 5px 10px;
@@ -634,19 +593,15 @@ section.languageDetails .content a.linkLangugageDetails:hover {
 	section#o_egzaminie .content ul {
 		font-size: 18px;
 	}
-	
 	section#o_egzaminie .content img {
 		width: 60%;
 	}
-
 	section#faq #pytania .pytanie {
 		font-size: 24px;
 	}
-
 	section#faq #pytania .pytanie_odpowiedz .odpowiedz {
 		font-size: 18px;
 	}
-	
 	section#faq {
 		width: 100%;
 	}
@@ -656,37 +611,27 @@ section.languageDetails .content a.linkLangugageDetails:hover {
 		justify-content: center;
 		align-items: center;
 	}
-
 	section#faq #pytania .pytanie_odpowiedz {
 		width: 90%;
 	}
-
 }
 
-/* ULTRA MAŁE EKRANY (max-width: 340px) */
 @media (max-width: 340px) {
-	/* HEADER */
 	header h1 {
 		font-size: 1.8rem;
 	}
-
 	header p {
 		font-size: 0.8rem;
 	}
-
 	header a {
 		font-size: 16px;
 		padding: 8px 15px;
 		margin-top: 3rem;
 	}
-
-	/* NAV */
 	main nav ul li a {
 		font-size: 16px;
 		padding: 4px 8px;
 	}
-
-	/* LANGUAGE DETAILS */
 	section.languageDetails {
 		width: 95vw;
 		right: 2.5vw;
@@ -694,52 +639,39 @@ section.languageDetails .content a.linkLangugageDetails:hover {
 		padding: 8px;
 		font-size: 13px;
 	}
-
 	section.languageDetails .content h2 {
 		font-size: 18px;
 	}
-
 	section.languageDetails .content p {
 		font-size: 16px;
 	}
-
 	section.languageDetails .content a.linkLangugageDetails {
 		font-size: 16px;
 		padding: 6px 12px;
 	}
-
-	/* ZAKRES MATERIALU */
 	section#zakres_materialu article.zakres {
 		grid-template-columns: 1fr;
 		gap: 0.8rem;
 	}
-
 	section#zakres_materialu article.zakres .element img {
 		width: 80px;
 		height: 80px;
 	}
-
 	section#zakres_materialu article.zakres .element button {
 		font-size: 14px;
 		padding: 6px 12px;
 	}
-
-	/* ETAPY EGZAMINU */
 	section#etapy_egzaminu .etapy .etap {
 		width: 95%;
 		min-height: 300px;
 	}
-
 	section#etapy_egzaminu .etapy .etap h3 {
 		font-size: 35px;
 	}
-
 	section#etapy_egzaminu .etapy .etap p,
 	section#etapy_egzaminu .etapy .etap ul {
 		font-size: 18px;
 	}
-
-	/* FAQ */
 	section#faq #pytania {
 		width: 95%;
 	}
